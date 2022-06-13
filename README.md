@@ -1,37 +1,52 @@
-# MyVueTest
+# my_vue_test
 
-#### 介绍
-Vue + TypeScript 练习
+此模板应帮助您开始使用 Vite 里面的 Vue 3 进行开发。
 
-#### 软件架构
-软件架构说明
+## 推荐的IDE设置
 
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-#### 安装教程
+## TS 支持 `.vue` 文件类型
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+TypeScript 默认情况下无法处理 `.vue` 文件，因此我们将 `tsc' CLI 替换为 'vue-tsc' 进行类型检查。 在编辑中，我们需要[Typescript Vue Plugin（Volar）]（https://marketplace.visualstudio.com/items?itemname=vue.vscode-typescript-vue-plugin）来使 TypeScript 检查到 '.vue' 类型。 
 
-#### 使用说明
+ 如果独立的 TypeScript 插件对您的感觉不够快，Volar 还实现了[Take Over Mode]（https://github.com/johnsoncodehk/volar/discussions/471#discussioncommentcomment-1361669），更具性能。 您可以通过以下步骤启用它： 
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+ 1.禁用内置的 TypeScript 扩展程序 
+     1）从 VSCode 的命令行中运行 'Extensions: Show Built-in Extensions' 命令 
+     2）查找`TypeScript and JavaScript Language Features'，右键单击并选择`Disable (Workspace)' 
+ 2.从 VSCode 的命令行中运行 'Developer: Reload Window' 命令。
 
-#### 参与贡献
+## 自定义配置
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
+## 项目设置
 
-#### 特技
+```sh
+npm install
+```
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 编译和热重载到设备
+
+```sh
+npm run dev
+```
+
+### 打包
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
+
+## 0-1学习文档
+
+1. [安装环境](./readme/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83.md)
+2. [路由传值](./readme/%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%80%BC.md)
+3. [父子传值](./readme/%E7%88%B6%E5%AD%90%E4%BC%A0%E5%80%BC.md)
