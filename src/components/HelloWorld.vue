@@ -1,6 +1,25 @@
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+
+@Options({
+  props: {
+    msg: String,
+    num: Number,
+    isB: Boolean,
+  },
+})
+export default class HelloWorld extends Vue {
+  msg!: string;
+  num!: number;
+  isB!: boolean;
+}
+</script>
+
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ "传递的文本： " + msg }}</h1>
+    <h1>{{ "传递的数字：" + num }}</h1>
+    <h1>{{ "传递的布尔值：" + (isB ? "true" : "false") }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
@@ -109,19 +128,6 @@
     </ul>
   </div>
 </template>
-
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-
-@Options({
-  props: {
-    msg: String,
-  },
-})
-export default class HelloWorld extends Vue {
-  msg!: string;
-}
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
