@@ -7,7 +7,12 @@
 - [开发工具: VSCode](https://code.visualstudio.com/) 
 - [插件: Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) 
 - [TypeScript](https://www.typescriptlang.org/docs/)
-- [插件: TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [插件: TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+
+## Web 基础
+- [HTML、CSS、JS](https://developer.mozilla.org/zh-CN/docs/Web)
+
+## Web 框架
 - [Vue 官方文档](https://vuejs.org/guide/quick-start.html)
 - [Vue 中文文档](https://v3.cn.vuejs.org/guide/installation.html)
 - [路由: Vue Router](https://router.vuejs.org/guide/)
