@@ -4,14 +4,18 @@
 
 ## 推荐的IDE设置
 
-- [VSCode](https://code.visualstudio.com/) 
-- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) 
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [开发工具: VSCode](https://code.visualstudio.com/) 
+- [插件: Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) 
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [插件: TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 - [Vue 官方文档](https://vuejs.org/guide/quick-start.html)
 - [Vue 中文文档](https://v3.cn.vuejs.org/guide/installation.html)
-- [Vue Router](https://router.vuejs.org/guide/)
-- [Vuex](https://vuex.vuejs.org/zh/)
-- [Vue I18n](https://vue-i18n.intlify.dev/introduction)
+- [路由: Vue Router](https://router.vuejs.org/guide/)
+- [状态管理: Vuex](https://vuex.vuejs.org/zh/)
+- [Vue Class Component](https://class-component.vuejs.org/)
+- [国际化: Vue I18n](https://vue-i18n.intlify.dev/introduction)
+- [UI: Element Plus](https://element-plus.gitee.io/zh-CN/guide/design.html)
+- [网络通信: Axios](https://axios-http.com/zh/docs/intro)
 
 ## Project setup
 ```
@@ -37,7 +41,7 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 从0到1学习文档
-### [注意事项和遇到的报错解决](./readme/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E5%92%8C%E9%81%87%E5%88%B0%E7%9A%84%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.md)
+### [遇到的报错和解决办法](./readme/%E9%81%87%E5%88%B0%E7%9A%84%E6%8A%A5%E9%94%99%E5%92%8C%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.md)
 ### [安装环境](./readme/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83.md)
 ### [国际化](./readme/%E5%9B%BD%E9%99%85%E5%8C%96.md)
 ### [路由传值](./readme/%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%80%BC.md)
