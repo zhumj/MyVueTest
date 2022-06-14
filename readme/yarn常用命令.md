@@ -1,5 +1,12 @@
 # yarn常用命令
 
+## 从0到1学习文档
+### [注意事项和遇到的报错解决](./readme/%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%E5%92%8C%E9%81%87%E5%88%B0%E7%9A%84%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.md)
+### [安装环境](./readme/%E5%AE%89%E8%A3%85%E7%8E%AF%E5%A2%83.md)
+### [国际化](./readme/%E5%9B%BD%E9%99%85%E5%8C%96.md)
+### [路由传值](./readme/%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%80%BC.md)
+### [父子传值](./readme/%E7%88%B6%E5%AD%90%E4%BC%A0%E5%80%BC.md)
+
 ## 安装淘宝源
 - yarn config set registry https://registry.npm.taobao.org -g
 - yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g 
