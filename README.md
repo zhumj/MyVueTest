@@ -52,3 +52,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [国际化](./readme/%E5%9B%BD%E9%99%85%E5%8C%96.md)
 ### [路由传值](./readme/%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%80%BC.md)
 ### [值的传递：父传子、子传父、兄弟间传递](./readme/%E5%80%BC%E7%9A%84%E4%BC%A0%E9%80%92%EF%BC%9A%E7%88%B6%E4%BC%A0%E5%AD%90%E3%80%81%E5%AD%90%E4%BC%A0%E7%88%B6%E3%80%81%E5%85%84%E5%BC%9F%E9%97%B4%E4%BC%A0%E9%80%92.md)
+### [鼠标经过或悬停变小手](./readme/%E9%BC%A0%E6%A0%87%E7%BB%8F%E8%BF%87%E6%88%96%E6%82%AC%E5%81%9C%E5%8F%98%E5%B0%8F%E6%89%8B.md)

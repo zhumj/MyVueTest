@@ -33,6 +33,7 @@ export default class Children extends Vue {
     <p>{{ msg }}</p>
     <button
       class="button"
+      style="cursor: pointer"
       v-on:click="funToFather('我是子组件通过函数方式传递的值')"
     >
       函数式向父组件传值
