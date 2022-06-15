@@ -15,7 +15,8 @@ export default class AboutView extends Vue {
 
 <template>
   <div class="about">
-    <h1>{{ $t("which_page", { msg: mMsg }) }}</h1>
-    <button v-on:click="change">点我修改值</button>
+    <h1>{{ $t("which_page", { msg: $route.query.msg }) }}</h1>
+    <button v-on:click="change">修改父组件传过来的值</button>
+    <p>{{ "父组件传过来的值：" + mMsg }}</p>
   </div>
 </template>

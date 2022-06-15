@@ -2,53 +2,18 @@
 import { Options, Vue } from "vue-class-component";
 
 @Options({
-  emits: ["emitCallback"],
   props: {
     msg: String,
-    num: Number,
-    isB: Boolean,
-    funCallback: {
-      type: Function,
-      required: true,
-    },
   },
 })
 export default class HelloWorld extends Vue {
   msg!: string;
-  num!: number;
-  isB!: boolean;
-
-  mNum = 0;
-
-  created() {
-    this.mNum = this.num;
-  }
-
-  addNum() {
-    this.mNum++;
-    console.log("点击 mNum = ", this.mNum);
-  }
-
-  funCallback!: (n: number) => void;
-  toFather(n: number) {
-    this.funCallback(n);
-  }
-
-  emitCallback(n: number) {
-    this.$emit("emitCallback", n);
-  }
 }
 </script>
 
 <template>
   <div class="hello">
-    <h1>{{ "传递的文本： " + msg }}</h1>
-    <h1>{{ "传递的数字：" + mNum }}</h1>
-    <button v-on:click="addNum">点我值加1</button>
-    <button v-on:click="mNum += 2">点我值加2</button>
-    <button v-on:click="toFather(mNum)">子值传父：函数使</button>
-    <button v-on:click="emitCallback(mNum)">子值传父：emit使</button>
-    <h1>{{ "传递的布尔值：" + (isB ? "true" : "false") }}</h1>
+    <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br />
       check out the

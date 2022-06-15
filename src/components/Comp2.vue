@@ -22,7 +22,7 @@ export default class Comp2 extends Vue {
 
 <template>
   <div class="comp1">
-    <p>------------------------- 组件2 -------------------------</p>
+    <p>------------------------- 我是兄弟组件2 -------------------------</p>
     <p>我是组件2，组件1是我兄弟，我才是大哥</p>
     <p>{{ "组件1说：" + fromComp1Msg }}</p>
     <button v-on:click="toComp1">向组件1宣称我是大哥的地位</button>

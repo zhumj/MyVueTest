@@ -5,8 +5,8 @@
       >About</router-link
     >
     |
-    <router-link :to="{ name: 'userTab', params: { msg: 'UserTab' } }"
-      >UserTab</router-link
+    <router-link :to="{ name: 'father', params: { msg: 'Father' } }"
+      >Father</router-link
     >
   </nav>
   <router-view />

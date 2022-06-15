@@ -17,12 +17,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/AboutView.vue"),
   },
   {
-    path: "/userTab",
-    name: "userTab",
+    path: "/father",
+    name: "father",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import("../views/UserTabView.vue"),
+    component: () => import("../views/FatherView.vue"),
   },
 ];
 
