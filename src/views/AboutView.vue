@@ -1,7 +1,8 @@
 <script lang="ts">
 import { Vue } from "vue-class-component";
-export default class HomeView extends Vue {
-  mMsg = "";
+import { LocationQueryValue } from "vue-router";
+export default class AboutView extends Vue {
+  mMsg: LocationQueryValue | LocationQueryValue[] = "";
   created() {
     this.mMsg = this.$route.query.msg;
   }

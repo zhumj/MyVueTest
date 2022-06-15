@@ -24,7 +24,7 @@ export default class HomeView extends Vue {
       msg="Welcome to Your Vue.js + TypeScript App"
       :num="123"
       :isB="true"
-      :toFatherNum="fatherFun"
+      :funCallback="fatherFun"
       @emitCallback="emitCallback"
     />
   </div>
