@@ -40,6 +40,7 @@ export default class Children extends Vue {
     </button>
     <button
       class="button"
+      style="cursor: pointer"
       v-on:click="emitToFather('我是子组件通过Emit方式传递的值')"
     >
       Emit式向父组件传值

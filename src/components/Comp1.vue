@@ -25,6 +25,8 @@ export default class Comp1 extends Vue {
     <p>------------------------- 我是兄弟组件1 -------------------------</p>
     <p>我是组件1，组件2是我兄弟，我是大哥</p>
     <p>{{ "组件2说：" + fromComp2Msg }}</p>
-    <button v-on:click="toComp2">向组件2宣称我是大哥的地位</button>
+    <button style="cursor: pointer" v-on:click="toComp2">
+      向组件2宣称我是大哥的地位
+    </button>
   </div>
 </template>
