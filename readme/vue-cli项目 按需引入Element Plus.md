@@ -46,6 +46,11 @@ module.exports = defineConfig({
 ```
 <el-divider />
 <el-button />
+
+=> 或者使用大驼峰
+
+<ElDivider />
+<ElButton />
 ```
 运行时会自动生成 auto-imports.d.ts 和 components.d.ts 两个文件，网上说是在 auto-imports.d.ts 自动导入生成组件，但是我的是在 components.d.ts 自动导入生成组件
 ```components.d.ts
