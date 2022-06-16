@@ -1,16 +1,6 @@
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Children from "@/components/Children.vue";
-import Comp1 from "@/components/Comp1.vue";
-import Comp2 from "@/components/Comp2.vue";
+import { Vue } from "vue-class-component";
 
-@Options({
-  components: {
-    Children,
-    Comp1,
-    Comp2,
-  },
-})
 export default class FatherView extends Vue {
   valueFromChild = "";
 

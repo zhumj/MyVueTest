@@ -31,20 +31,18 @@ export default class Children extends Vue {
   <div class="children">
     <p>------------------------- 我是子组件 -------------------------</p>
     <p>{{ msg }}</p>
-    <button
+    <el-button
       class="button"
-      style="cursor: pointer"
       v-on:click="funToFather('我是子组件通过函数方式传递的值')"
     >
       函数式向父组件传值
-    </button>
-    <button
+    </el-button>
+    <el-button
       class="button"
-      style="cursor: pointer"
       v-on:click="emitToFather('我是子组件通过Emit方式传递的值')"
     >
       Emit式向父组件传值
-    </button>
+    </el-button>
   </div>
 </template>
 
