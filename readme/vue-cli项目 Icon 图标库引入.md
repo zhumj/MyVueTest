@@ -33,16 +33,46 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 ## 引入 unplugin-icons 自定义图标库
 
-### 安装
+### 安装插件
 ```
-npm i -D unplugin-icons
-
-=> 或者
-
 yarn add unplugin-icons
 ```
 
-### 自动按需引入
+### 安装图标数据
+```
+yarn add @iconify/json
+```
+
+### 配置 vue3 编译器
+*我在本地运行的时候不配置这个也可以正常使用*
+```
+// Vue 3 支持需要对等依赖@vue/compiler-sfc：
+yarn @vue/compiler-sfc
+```
+```vue.config.js
+=> vue.config.js
+
+module.exports = defineConfig({
+  configureWebpack: {
+    plugins: [
+      Icons({ compiler: "vue3" }),
+    ],
+  },
+});
+```
+```tsconfig.json
+=> tsconfig.json
+
+{
+  "compilerOptions": {
+    "types": [
+      "unplugin-icons/types/vue",
+    ]
+  }
+}
+```
+
+### 自动引入
 
 #### unplugin-vue-components
 ``` vue.config.js
@@ -50,8 +80,8 @@ yarn add unplugin-icons
 
 const { defineConfig } = require("@vue/cli-service");
 const Icons = require("unplugin-icons/webpack");
+const IconsResolver = require("unplugin-icons/resolver");
 const Components = require("unplugin-vue-components/webpack");
-const IconsResolver =  = require("unplugin-icons/resolvers");
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -72,8 +102,8 @@ module.exports = defineConfig({
 
 const { defineConfig } = require("@vue/cli-service");
 const Icons = require("unplugin-icons/webpack");
+const IconsResolver = require("unplugin-icons/resolver");
 const AutoImport  = require("unplugin-auto-import/webpack");
-const IconsResolver =  = require("unplugin-icons/resolvers");
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -105,5 +135,5 @@ IconsResolver({
 <icon-mdi-account />
 
 // 当然大驼峰也可以
-icon-mdi-account => IconMdiAccount
+<icon-mdi-account /> => <IconMdiAccount />
 ```

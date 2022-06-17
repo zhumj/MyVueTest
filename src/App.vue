@@ -11,7 +11,6 @@
     <router-link :to="{ name: 'father', params: { msg: 'Father' } }"
       >Father</router-link
     >
-    <el-button v-on:click="openMessage">获取语言</el-button>
   </nav>
   <router-view />
 </template>

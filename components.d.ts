@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElDivider: typeof import('element-plus/es')['ElDivider']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    ITwemojiFlagChina: typeof import('~icons/twemoji/flag-china')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

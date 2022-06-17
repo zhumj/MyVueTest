@@ -15,6 +15,7 @@ export default class FatherView extends Vue {
 
 <template>
   <div class="father">
+    <i-twemoji-flag-china class="icon" />
     <h1>{{ $t("which_page", { msg: $route.params.msg }) }}</h1>
     <Children
       msg="我是父组件传过来的值"
@@ -26,3 +27,9 @@ export default class FatherView extends Vue {
     <Comp2 />
   </div>
 </template>
+
+<style lang="scss">
+.icon {
+  font-size: 10em;
+}
+</style>

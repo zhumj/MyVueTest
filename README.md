@@ -20,7 +20,7 @@
 - [Vue Class Component](https://class-component.vuejs.org/)
 - [国际化: Vue I18n](https://vue-i18n.intlify.dev/introduction)
 - [UI: Element Plus](https://element-plus.gitee.io/zh-CN/guide/design.html)
-- [自定义图标：unplugin-icons](https://github.com/antfu/unplugin-icons)
+- [图标插件：unplugin-icons](https://www.npmjs.com/package/unplugin-icons) 配套图标数据 [Iconify](https://iconify.design/)
 - [事件总线: Mitt](https://github.com/developit/mitt)
 - [网络通信: Axios](https://axios-http.com/zh/docs/intro)
 

@@ -8,10 +8,13 @@
     "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
+    "@iconify/json": "^2.1.62",
+    "@vue/compiler-sfc": "^3.2.37",
     "core-js": "^3.8.3",
     "element-plus": "^2.2.5",
     "mitt": "^3.0.0",
     "unplugin-auto-import": "^0.8.8",
+    "unplugin-icons": "^0.14.4",
     "unplugin-vue-components": "^0.19.6",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
