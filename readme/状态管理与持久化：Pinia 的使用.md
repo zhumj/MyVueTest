@@ -77,6 +77,14 @@ export default class AppView extends Vue {
 }
 </script>
 ```
+*$reset : 重置状态*
+```
+mUserStore.$reset();
+```
+*$dispose : 注销store*
+```
+mUserStore.$dispose();
+```
 
 ## 订阅/监听
 
