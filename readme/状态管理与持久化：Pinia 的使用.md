@@ -128,8 +128,8 @@ export const userStore = defineStore({
   persist: {
     // 修改存储中使用的键名称，默认为当前 Store的 id
     key: "userInfo",
-    // 修改为 window.sessionStorage，必须有getItem和setItem方法（默认为localStorage）
-    storage: window.sessionStorage,
+    // 修改为 sessionStorage，必须有getItem和setItem方法（默认为localStorage）
+    storage: sessionStorage,
     // 用于部分持久化
     paths: ["userName"],
     // 在从本地存储恢复状态之前执行挂钩
