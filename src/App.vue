@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider size="large" :z-index="3000" :locale="getLocale()">
+  <el-config-provider size="large" :z-index="3000" :locale="getElementPlusLang">
   </el-config-provider>
   <nav>
     <router-link to="/">Home</router-link>
@@ -11,6 +11,13 @@
     <router-link :to="{ name: 'father', params: { msg: 'Father' } }"
       >Father</router-link
     >
+    <el-divider direction="vertical" />
+    <el-button v-on:click="changeStoreLang">{{
+      mAppStore.$state.lang
+    }}</el-button>
+    <el-button v-on:click="changeStoreName">{{
+      mUserStore.getName + " " + mUserStore.$state.age
+    }}</el-button>
   </nav>
   <router-view />
 </template>
@@ -19,17 +26,50 @@
 import { Vue } from "vue-class-component";
 import zhCn from "element-plus/lib/locale/lang/zh-cn";
 import en from "element-plus/lib/locale/lang/en";
-import { ElMessage } from "element-plus";
+import { appStore, userStore } from "./store";
+
+// 使普通数据变响应式的函数
+import { storeToRefs } from "pinia";
 
 export default class AppView extends Vue {
-  openMessage() {
-    const i18nLang = this.$i18n.locale;
-    ElMessage("i18n语言 = " + i18nLang);
+  mAppStore = appStore();
+  mUserStore = userStore();
+
+  mName = "";
+  mAge = 0;
+
+  created() {
+    const { name, age } = storeToRefs(userStore());
+    this.mName = name.value;
+    this.mAge = age.value;
+    this.mAppStore.setLang(this.$i18n.locale);
   }
-  getLocale() {
-    const i18nLang = this.$i18n.locale;
-    console.log("i18n语言 = ", i18nLang);
-    return i18nLang.indexOf("zh") ? zhCn : en;
+
+  getElementPlusLang() {
+    if (this.$i18n.locale == "zh") {
+      return zhCn;
+    } else {
+      return en;
+    }
+  }
+
+  changeStoreLang() {
+    if (this.mAppStore.getLang == "zh") {
+      this.mAppStore.setLang("en");
+    } else {
+      this.mAppStore.setLang("zh");
+    }
+  }
+
+  changeStoreName() {
+    // this.mUserStore.$patch({
+    //   name: "晓雯",
+    //   age: 3,
+    // });
+    this.mUserStore.$patch((state) => {
+      state.name = "晓雯";
+      state.age++;
+    });
   }
 }
 </script>

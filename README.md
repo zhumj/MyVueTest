@@ -16,7 +16,7 @@
 - [Vue 官方文档](https://vuejs.org/guide/quick-start.html)
 - [Vue 中文文档](https://v3.cn.vuejs.org/guide/installation.html)
 - [路由: Vue Router](https://router.vuejs.org/guide/)
-- [状态管理: Vuex](https://vuex.vuejs.org/zh/)
+- [状态管理: Pinia](https://pinia.vuejs.org/) 配套持久化插件 [pinia-plugin-persistedstate](https://www.npmjs.com/package/pinia-plugin-persistedstate)
 - [Vue Class Component](https://class-component.vuejs.org/)
 - [国际化: Vue I18n](https://vue-i18n.intlify.dev/introduction)
 - [UI: Element Plus](https://element-plus.gitee.io/zh-CN/guide/design.html)
@@ -56,3 +56,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [鼠标经过或悬停变小手](./readme/%E9%BC%A0%E6%A0%87%E7%BB%8F%E8%BF%87%E6%88%96%E6%82%AC%E5%81%9C%E5%8F%98%E5%B0%8F%E6%89%8B.md)
 ### [vue-cli项目 按需引入Element Plus](./readme/vue-cli%E9%A1%B9%E7%9B%AE%20%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5Element%20Plus.md)
 ### [vue-cli项目 Icon 图标库引入](./readme/vue-cli%E9%A1%B9%E7%9B%AE%20Icon%20%E5%9B%BE%E6%A0%87%E5%BA%93%E5%BC%95%E5%85%A5.md)
+### [状态管理与持久化：Pinia 的使用](./readme/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E4%B8%8E%E6%8C%81%E4%B9%85%E5%8C%96%EF%BC%9APinia%20%E7%9A%84%E4%BD%BF%E7%94%A8.md)
