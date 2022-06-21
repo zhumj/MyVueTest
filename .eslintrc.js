@@ -16,9 +16,12 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     // 取消 LF 和 CTLF 的检验
-    "prettier/prettier": ["error", {
-      "endOfLine":"auto"
-    }],
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     // 'linebreak-style': [
     //   0,
     //   'error',
