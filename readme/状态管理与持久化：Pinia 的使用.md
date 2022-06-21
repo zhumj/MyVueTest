@@ -232,3 +232,10 @@ export const userStore = defineStore({
   },
 });
 ```
+
+## sessionStorage 和 localStorage
+
+*localStorage和sessionStorage一样都是用来存储客户端临时信息的对象。*
+*区别：*
+*localStorage生命周期是永久，除非用户清除localStorage信息，否则这些信息将永远存在；*
+*sessionStorage生命周期为当前窗口或标签页，一旦窗口或标签页被永久关闭了，那么所有通过它存储的数据也就被清空了。*

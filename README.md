@@ -57,3 +57,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [vue-cli项目 按需引入Element Plus](./readme/vue-cli%E9%A1%B9%E7%9B%AE%20%E6%8C%89%E9%9C%80%E5%BC%95%E5%85%A5Element%20Plus.md)
 ### [vue-cli项目 Icon 图标库引入](./readme/vue-cli%E9%A1%B9%E7%9B%AE%20Icon%20%E5%9B%BE%E6%A0%87%E5%BA%93%E5%BC%95%E5%85%A5.md)
 ### [状态管理与持久化：Pinia 的使用](./readme/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E4%B8%8E%E6%8C%81%E4%B9%85%E5%8C%96%EF%BC%9APinia%20%E7%9A%84%E4%BD%BF%E7%94%A8.md)
+### [vue-router 在新窗口打开页面](./readme/vue-router%20%E5%9C%A8%E6%96%B0%E7%AA%97%E5%8F%A3%E6%89%93%E5%BC%80%E9%A1%B5%E9%9D%A2.md)

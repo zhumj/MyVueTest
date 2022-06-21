@@ -24,7 +24,8 @@ module.exports = defineConfig({
       Icons({ compiler: "vue3", autoInstall: true }),
     ],
   },
-  devServer: {
-    port: 8081,
-  },
+  // devServer: {
+  //   // 自定义端口
+  //   port: 8081,
+  // },
 });
