@@ -59,3 +59,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [状态管理与持久化：Pinia 的使用](./readme/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86%E4%B8%8E%E6%8C%81%E4%B9%85%E5%8C%96%EF%BC%9APinia%20%E7%9A%84%E4%BD%BF%E7%94%A8.md)
 ### [vue-router 在新窗口打开页面](./readme/vue-router%20%E5%9C%A8%E6%96%B0%E7%AA%97%E5%8F%A3%E6%89%93%E5%BC%80%E9%A1%B5%E9%9D%A2.md)
 ### [Vue-Router多层嵌套](./readme/Vue-Router%E5%A4%9A%E5%B1%82%E5%B5%8C%E5%A5%97.md)
+### [网络请求库Axios](./readme/%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E5%BA%93Axios%E5%AE%89%E8%A3%85.md)
