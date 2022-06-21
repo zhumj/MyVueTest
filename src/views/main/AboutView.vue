@@ -15,7 +15,7 @@ export default class AboutView extends Vue {
 
 <template>
   <div class="about">
-    <i-twemoji-flag-china class="icon" />
+    <i-twemoji-flag-china class="aboutIcon" />
     <h1>{{ $t("which_page", { msg: $route.query.msg }) }}</h1>
     <el-button style="cursor: pointer" v-on:click="change">
       修改父组件传过来的值
@@ -25,7 +25,7 @@ export default class AboutView extends Vue {
 </template>
 
 <style lang="scss">
-.icon {
+.aboutIcon {
   font-size: 10em;
 }
 </style>

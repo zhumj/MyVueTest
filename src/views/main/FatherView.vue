@@ -15,7 +15,7 @@ export default class FatherView extends Vue {
 
 <template>
   <div class="father">
-    <i-twemoji-flag-china class="icon" />
+    <i-twemoji-flag-china class="fatherIcon" />
     <h1>
       {{ $t("which_page", { msg: $route.params.msg }) }}
     </h1>
@@ -31,7 +31,7 @@ export default class FatherView extends Vue {
 </template>
 
 <style lang="scss">
-.icon {
+.fatherIcon {
   font-size: 10em;
 }
 </style>
