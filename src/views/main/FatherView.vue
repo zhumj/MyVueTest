@@ -19,12 +19,12 @@ export default class FatherView extends Vue {
     <h1>
       {{ $t("which_page", { msg: $route.params.msg }) }}
     </h1>
+    <p>{{ valueFromChild }}</p>
     <Children
       msg="我是父组件传过来的值"
       :funCallback="funChildCallback"
       @emitCallback="emitChildCallback"
     />
-    <p>{{ valueFromChild }}</p>
     <Comp1 />
     <Comp2 />
   </div>

@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Comp2: typeof import('./src/components/Comp2.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
     ElDivider: typeof import('element-plus/es')['ElDivider']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     ITwemojiFlagChina: typeof import('~icons/twemoji/flag-china')['default']

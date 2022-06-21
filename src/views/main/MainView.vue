@@ -19,8 +19,8 @@
     <el-button v-on:click="changeStoreName">{{
       mUserStore.getName + " " + mUserStore.$state.age
     }}</el-button>
-
     <el-button v-on:click="goLogin">Go Login</el-button>
+    <el-date-picker type="date" placeholder="Pick a day" />
   </nav>
   <router-view />
 </template>

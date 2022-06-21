@@ -1,5 +1,5 @@
 <template>
-  <el-config-provider size="large" :z-index="3000" :locale="getElementPlusLang">
+  <el-config-provider size="large" :z-index="3000" :locale="mLocaleElLang">
   </el-config-provider>
   <router-view />
 </template>
@@ -13,15 +13,14 @@ import { appStore } from "./store";
 export default class AppView extends Vue {
   mAppStore = appStore();
 
+  mLocaleElLang = zhCn;
+
   created() {
     this.mAppStore.setLang(this.$i18n.locale);
-  }
-
-  getElementPlusLang() {
     if (this.$i18n.locale == "zh") {
-      return zhCn;
+      this.mLocaleElLang = zhCn;
     } else {
-      return en;
+      this.mLocaleElLang = en;
     }
   }
 }
