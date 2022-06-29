@@ -4,17 +4,23 @@
 
 ```
 <script lang="ts" setup>
-import { defineProps, ref } from 'vue'
+import { defineProps, defineEmit, ref } from 'vue'
 
 // 父组件传过来的值
 const props = defineProps({
   id: String
 })
 
+// 定义向父组件传值的方法
+const emit = defineEmit<{
+  (e: 'change', id: number): void
+  (e: 'update', value: string): void
+}>()
+
 const isLoading = ref(false)
 
 function buttonClick(type: number) {
-  ...
+  emit('change', 3)
 }
 </script>
 ```
@@ -29,13 +35,17 @@ import { Options, Vue } from "vue-class-component";
   props: {
     msg: String,
   },
+  // 子传父
+  emits: [
+    'callBack'
+  ],
 })
 export default class Children extends Vue {
   // 父组件传递过来的数据
   msg!: string;
 
   function buttonClick(type: number) {
-    ...
+    this.$emit("callBack", type);
   }
 }
 </script>
@@ -55,7 +65,11 @@ export default defineComponent({
       default: ''
     }
   },
-  setup(props) {
+  // 子传父
+  emits: [
+    'callBack'
+  ],
+  setup(props, { emit }) {
     const state: {
       isLoading: boolean;
     } = reactive(
@@ -65,7 +79,7 @@ export default defineComponent({
     )
 
     function onButtonClick() {
-      ...
+      emit('callBack', params)
     }
 
     return { onButtonClick }
