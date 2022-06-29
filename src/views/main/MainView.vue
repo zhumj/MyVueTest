@@ -57,6 +57,8 @@ export default class AppView extends Vue {
     } else {
       this.mAppStore.setLang("zh");
     }
+    sessionStorage.setItem("lang", this.mAppStore.getLang);
+    location.reload();
   }
 
   changeStoreName() {
