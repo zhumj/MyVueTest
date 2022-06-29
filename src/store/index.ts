@@ -36,20 +36,20 @@ export const userStore = defineStore({
   // 全部持久化
   // persist: true,
   // 配置可选持久化
-  // persist: {
-  //   // 修改存储中使用的键名称，默认为当前 Store的 id
-  //   key: "userInfo",
-  //   // 修改为 sessionStorage，必须有getItem和setItem方法（默认为localStorage）
-  //   storage: sessionStorage,
-  //   // 用于部分持久化
-  //   paths: [],
-  //   // 在从本地存储恢复状态之前执行挂钩
-  //   beforeRestore: (_context) => {
-  //     console.log("Before hydration...");
-  //   },
-  //   // 从本地存储恢复状态后执行的挂钩
-  //   afterRestore: (_context) => {
-  //     console.log("After hydration...");
-  //   },
-  // },
+  persist: {
+    // 修改存储中使用的键名称，默认为当前 Store的 id
+    key: "userInfo",
+    // 修改为 sessionStorage，必须有getItem和setItem方法（默认为localStorage）
+    storage: sessionStorage,
+    // 用于部分持久化
+    paths: ["name", "age"],
+    //   // 在从本地存储恢复状态之前执行挂钩
+    //   beforeRestore: (_context) => {
+    //     console.log("Before hydration...");
+    //   },
+    //   // 从本地存储恢复状态后执行的挂钩
+    //   afterRestore: (_context) => {
+    //     console.log("After hydration...");
+    //   },
+  },
 });
