@@ -1,6 +1,4 @@
 <template>
-  <el-config-provider size="large" :z-index="3000" :locale="getElementPlusLang">
-  </el-config-provider>
   <nav>
     <router-link to="/main/home">Home</router-link>
     <el-divider direction="vertical" />
@@ -19,21 +17,29 @@
     <el-button v-on:click="changeStoreName">{{
       mUserStore.getName + " " + mUserStore.$state.age
     }}</el-button>
+    <el-divider direction="vertical" />
     <el-button v-on:click="goLogin">Go Login</el-button>
-    <el-date-picker type="date" placeholder="Pick a day" />
+    <el-divider direction="vertical" />
+    <el-date-picker
+      v-model="selectedDate"
+      type="date"
+      placeholder="Pick a day"
+      value-format="YYYY-MM-DD"
+    />
   </nav>
   <router-view />
 </template>
 
 <script lang="ts">
 import { Vue } from "vue-class-component";
-import zhCn from "element-plus/lib/locale/lang/zh-cn";
-import en from "element-plus/lib/locale/lang/en";
+import { ref } from "vue";
 import { appStore, userStore } from "@/store";
 
 export default class AppView extends Vue {
   mAppStore = appStore();
   mUserStore = userStore();
+
+  selectedDate = ref("");
 
   created() {
     this.mAppStore.setLang(this.$i18n.locale);
@@ -41,14 +47,6 @@ export default class AppView extends Vue {
 
   goLogin() {
     this.$router.push({ path: "/login" });
-  }
-
-  getElementPlusLang() {
-    if (this.$i18n.locale == "zh") {
-      return zhCn;
-    } else {
-      return en;
-    }
   }
 
   changeStoreLang() {
