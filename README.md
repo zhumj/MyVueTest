@@ -61,3 +61,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [Vue-Router多层嵌套](./readme/Vue-Router%E5%A4%9A%E5%B1%82%E5%B5%8C%E5%A5%97.md)
 ### [网络请求库Axios](./readme/%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E5%BA%93Axios%E5%AE%89%E8%A3%85.md)
 ### [script+ts的三种打开方式](./readme/script%2Bts%E7%9A%84%E4%B8%89%E7%A7%8D%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F.md)
+### [全局工具类](./readme/%E5%85%A8%E5%B1%80%E5%B7%A5%E5%85%B7%E7%B1%BB.md)
