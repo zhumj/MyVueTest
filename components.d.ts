@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
     Comp1: typeof import('./src/components/Comp1.vue')['default']
     Comp2: typeof import('./src/components/Comp2.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
+    ElCard: typeof import('element-plus/es')['ElCard']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
     ElDivider: typeof import('element-plus/es')['ElDivider']
