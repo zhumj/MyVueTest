@@ -63,3 +63,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [script+ts的三种打开方式](./readme/script%2Bts%E7%9A%84%E4%B8%89%E7%A7%8D%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F.md)
 ### [全局工具类](./readme/%E5%85%A8%E5%B1%80%E5%B7%A5%E5%85%B7%E7%B1%BB.md)
 ### [鼠标悬停卡片翻转](./readme/%E9%BC%A0%E6%A0%87%E6%82%AC%E5%81%9C%E5%8D%A1%E7%89%87%E7%BF%BB%E8%BD%AC.md)
+### [用el-row和el-col自定义分栏数](./readme/%E7%94%A8el-row%E5%92%8Cel-col%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E6%A0%8F%E6%95%B0.md)
