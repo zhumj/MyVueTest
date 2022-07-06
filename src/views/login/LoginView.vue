@@ -13,20 +13,19 @@
       <el-button v-on:click="goMain">Go Main</el-button>
     </div>
     <p>用ul和li来做多行多列列表</p>
-    <div>
+    <div v-loading="true" style="display: table; width: 100%">
       <ul
         v-for="data in dataList"
         :key="data"
-        style="list-style: none; margin-top: 20px; background-color: blueviolet"
+        style="list-style: none; margin-top: 20px"
       >
         <li style="width: 25%; float: left">
-          <!-- <el-card :body-style="{ padding: '10px' }" class="Main"></el-card> -->
-          <el-card :body-style="{ padding: '0px' }" class="Main">
-            <div class="Before">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
               <p style="background-color: burlywood">我是正面{{ data }}</p>
               <i-twemoji-flag-china class="loginIcon" />
             </div>
-            <div class="After">
+            <div class="Reverse">
               <p style="background-color: burlywood">我是反面{{ data }}</p>
               <i-twemoji-flag-china class="loginIcon" />
             </div>
@@ -35,7 +34,7 @@
       </ul>
     </div>
     <p>用el-row和el-col来做多行多列列表</p>
-    <div style="clear: both">
+    <div>
       <el-row
         v-for="index in dataList.length % 4 === 0
           ? Math.floor(dataList.length / 4)
@@ -53,22 +52,20 @@
           :key="i"
           :span="6"
         >
-          <div>
-            <el-card :body-style="{ padding: '0px' }" class="Main">
-              <div class="Before">
-                <p style="background-color: burlywood">
-                  我是正面{{ dataList[(index - 1) * 4 + i - 1] }}
-                </p>
-                <i-twemoji-flag-china class="loginIcon" />
-              </div>
-              <div class="After">
-                <p style="background-color: burlywood">
-                  我是反面{{ dataList[(index - 1) * 4 + i - 1] }}
-                </p>
-                <i-twemoji-flag-china class="loginIcon" />
-              </div>
-            </el-card>
-          </div>
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">
+                我是正面{{ dataList[(index - 1) * 4 + i - 1] }}
+              </p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">
+                我是反面{{ dataList[(index - 1) * 4 + i - 1] }}
+              </p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
         </el-col>
       </el-row>
     </div>
@@ -103,7 +100,7 @@ function goMain() {
   background-color: aquamarine;
 }
 
-.Main {
+.Container {
   height: 250px;
   margin-left: 10px;
   margin-right: 10px;
@@ -112,7 +109,7 @@ function goMain() {
   transform-style: preserve-3d;
 }
 
-.Before {
+.Positive {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -122,7 +119,7 @@ function goMain() {
   transition: 1.5s;
 }
 
-.After {
+.Reverse {
   width: 100%;
   height: 100%;
   text-align: center;
@@ -132,10 +129,10 @@ function goMain() {
   transition: 1.5s;
 }
 
-.Main:hover .Before {
+.Container:hover .Positive {
   transform: rotateY(180deg);
 }
-.Main:hover .After {
+.Container:hover .Reverse {
   transform: rotateY(0deg);
 }
 </style>
