@@ -69,6 +69,95 @@
         </el-col>
       </el-row>
     </div>
+    <p>用el-row和el-col自定义分栏数</p>
+    <div>
+      <el-row :gutter="0" style="width: auto; background-color: coral">
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面0</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面0</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面1</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面1</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面2</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面2</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面3</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面3</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面4</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面4</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面5</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面5</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+        <el-col :span="25" style="width: 14.28%">
+          <el-card :body-style="{ padding: '0px' }" class="Container">
+            <div class="Positive">
+              <p style="background-color: burlywood">我是正面6</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+            <div class="Reverse">
+              <p style="background-color: burlywood">我是反面6</p>
+              <i-twemoji-flag-china class="loginIcon" />
+            </div>
+          </el-card>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
