@@ -2,8 +2,8 @@
 
 ```
 <template>
-  <div v-for="i in 5" :key="i" class="Container">
-    <p class="Child">我是第{{ i }}栏</p>
+  <div class="Container">
+    <p v-for="i in 5" :key="i" class="Child">我是第{{ i }}栏</p>
   </div>
 </template>
 
