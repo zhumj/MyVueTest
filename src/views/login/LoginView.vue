@@ -104,13 +104,13 @@
           v-if="(index - 1) * 5 + i <= dataList.length"
           :body-style="{ padding: '0px' }"
         >
-          <div v-if="(index - 1) * 5 + i <= dataList.length" class="Positive1">
+          <div v-if="(index - 1) * 5 + i <= dataList.length" class="Positive">
             <p style="background-color: burlywood">
               我是正面{{ dataList[(index - 1) * 5 + i - 1] }}
             </p>
             <i-twemoji-flag-china class="loginIcon" />
           </div>
-          <div v-if="(index - 1) * 5 + i <= dataList.length" class="Reverse1">
+          <div v-if="(index - 1) * 5 + i <= dataList.length" class="Reverse">
             <p style="background-color: burlywood">
               我是反面{{ dataList[(index - 1) * 5 + i - 1] }}
             </p>
@@ -118,6 +118,25 @@
           </div>
         </el-card>
       </div>
+    </div>
+    <div
+      style="width: 100%; display: flex; flex-direction: row; flex-wrap: wrap"
+    >
+      <el-card
+        v-for="i in 13"
+        :key="i"
+        :body-style="{ padding: '0px' }"
+        class="Container2"
+      >
+        <div class="Positive">
+          <p style="background-color: burlywood">我是正面{{ i }}</p>
+          <i-twemoji-flag-china class="loginIcon" />
+        </div>
+        <div class="Reverse">
+          <p style="background-color: burlywood">我是反面{{ i }}</p>
+          <i-twemoji-flag-china class="loginIcon" />
+        </div>
+      </el-card>
     </div>
   </div>
 </template>
@@ -187,7 +206,7 @@ function goMain() {
 }
 
 .Container1 {
-  flex: 1;
+  flex: 18%;
   height: 250px;
   margin-left: 10px;
   margin-right: 10px;
@@ -196,30 +215,27 @@ function goMain() {
   transform-style: preserve-3d;
 }
 
-.Positive1 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: aqua;
-  position: absolute;
-  backface-visibility: hidden;
-  transition: 1.5s;
-}
-
-.Reverse1 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  position: absolute;
-  transform: rotateY(-180deg);
-  backface-visibility: hidden;
-  transition: 1.5s;
-}
-
-.Container1:hover .Positive1 {
+.Container1:hover .Positive {
   transform: rotateY(180deg);
 }
-.Container1:hover .Reverse1 {
+.Container1:hover .Reverse {
+  transform: rotateY(0deg);
+}
+
+.Container2 {
+  flex: 18%;
+  height: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.Container2:hover .Positive {
+  transform: rotateY(180deg);
+}
+.Container2:hover .Reverse {
   transform: rotateY(0deg);
 }
 </style>
