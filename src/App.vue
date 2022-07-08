@@ -2,7 +2,9 @@
   <el-config-provider size="large" :z-index="3000" :locale="mLocaleElLang">
   </el-config-provider>
   <div class="app" :class="{ grey_mode: isGrayscaleOpen }">
-    <el-button v-on:click="openGrayscale">全站灰度</el-button>
+    <el-button v-on:click="openGrayscale" style="margin: 10px"
+      >全站置灰</el-button
+    >
     <router-view />
   </div>
 </template>
@@ -17,7 +19,7 @@ export default class AppView extends Vue {
   mAppStore = appStore();
 
   mLocaleElLang = zhCn;
-  isGrayscaleOpen = true;
+  isGrayscaleOpen = false;
 
   created() {
     this.mAppStore.setLang(this.$i18n.locale);
