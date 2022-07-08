@@ -66,3 +66,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### [用el-row和el-col自定义分栏数](./readme/%E7%94%A8el-row%E5%92%8Cel-col%E8%87%AA%E5%AE%9A%E4%B9%89%E5%88%86%E6%A0%8F%E6%95%B0.md)
 ### [泛型和类型判断](./readme/%E6%B3%9B%E5%9E%8B%E5%92%8C%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%AD.md)
 ### [Flexbox实现多列布局](./readme/Flexbox%E5%AE%9E%E7%8E%B0%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80.md)
+### [特殊节日一键全站置灰](./readme/%E7%89%B9%E6%AE%8A%E8%8A%82%E6%97%A5%E4%B8%80%E9%94%AE%E5%85%A8%E7%AB%99%E7%BD%AE%E7%81%B0.md)
