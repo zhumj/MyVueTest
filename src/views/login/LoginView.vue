@@ -10,7 +10,51 @@
         value-format="YYYY-MM-DD"
       />
       <p>{{ selectedDate }}</p>
-      <el-button v-on:click="goMain">Go Main</el-button>
+      <div class="LoginContainer">
+        <el-card
+          :body-style="{ padding: '10px' }"
+          class="Login"
+          :class="isRegister ? 'container-login' : ''"
+        >
+          <el-form :model="formData">
+            <el-form-item label="账号">
+              <el-input />
+            </el-form-item>
+            <el-form-item label="密码">
+              <el-input />
+            </el-form-item>
+          </el-form>
+          <el-button v-on:click="goMain">登 录</el-button>
+          <p style="font-size: 12px">
+            还没账号？<span
+              style="
+                color: red;
+                font-size: 12px;
+                cursor: pointer;
+                text-decoration: underline;
+              "
+              @click="isRegister = !isRegister"
+              >注册</span
+            >
+            一个吧！
+          </p>
+        </el-card>
+        <el-card
+          :body-style="{ padding: '10px' }"
+          class="Register"
+          :class="isRegister ? 'container-register' : ''"
+        >
+          <el-form :model="formData">
+            <el-form-item label="账号">
+              <el-input />
+            </el-form-item>
+            <el-form-item label="密码">
+              <el-input />
+            </el-form-item>
+          </el-form>
+          <el-button v-on:click="register">注 册</el-button>
+        </el-card>
+      </div>
     </div>
     <p>用ul和li来做多行多列列表</p>
     <div v-loading="true" style="display: table; width: 100%">
@@ -144,11 +188,18 @@
 <script lang="ts" setup>
 import { onBeforeMount, ref } from "vue";
 import { useRouter } from "vue-router";
+// import "element-plus/theme-chalk/el-message.css";
+import { ElMessage } from "element-plus";
 
 const { push } = useRouter();
 const selectedDate = ref("");
 // 数据列表
 const dataList = ref([] as number[]);
+const isRegister = ref(false);
+const formData = ref({
+  username: "",
+  password: "",
+});
 
 onBeforeMount(() => {
   dataList.value.length = 0;
@@ -157,6 +208,11 @@ onBeforeMount(() => {
   }
   console.log("数据条数 = ", dataList.value.length);
 });
+
+function register() {
+  ElMessage.info("注册");
+  isRegister.value = !isRegister.value;
+}
 
 function goMain() {
   push({ path: "/main" });
@@ -167,6 +223,41 @@ function goMain() {
 .loginIcon {
   font-size: 10em;
   background-color: aquamarine;
+}
+
+.LoginContainer {
+  height: 14em;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login {
+  width: 25rem;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1.5s;
+}
+
+.Register {
+  width: 25rem;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  transition: 1.5s;
+}
+
+.LoginContainer .container-login {
+  transform: rotateY(180deg);
+}
+.LoginContainer .container-register {
+  transform: rotateY(0deg);
 }
 
 .Container {
