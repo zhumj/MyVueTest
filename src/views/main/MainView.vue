@@ -7,8 +7,10 @@
     >
     <el-divider direction="vertical" />
     <router-link :to="{ name: 'father', params: { msg: 'Father' } }"
-      >Father</router-link
+      >传值示例</router-link
     >
+    <el-divider direction="vertical" />
+    <router-link to="/main/randomRollCall">爱我就请使劲抽我</router-link>
     <el-divider direction="vertical" />
     <el-button v-on:click="changeStoreLang">{{
       mAppStore.$state.lang

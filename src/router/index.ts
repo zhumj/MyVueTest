@@ -27,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "father",
         component: () => import("@/views/main/FatherView.vue"),
       },
+      {
+        path: "randomRollCall",
+        name: "randomRollCall",
+        component: () => import("@/views/main/RandomRollCall.vue"),
+      },
     ],
   },
   {
