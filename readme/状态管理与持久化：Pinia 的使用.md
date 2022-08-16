@@ -117,6 +117,17 @@ export default class AppView extends Vue {
   }
 }
 </script>
+
+// 单个属性监听用下面的watch这种更好用
+<script lang="ts" setup>
+import { userStore } from "./store";
+
+const mUserStore = userStore();
+
+watch(() => mUserStore.$state.userName, (newVal, oldVal) => {
+  // 在这里做些什么
+})
+</script>
 ```
 
 ### $onAction 对actions的订阅监听
@@ -127,7 +138,7 @@ import { userStore } from "./store";
 
 export default class AppView extends Vue {
   mUserStore = userStore();
-
+  
   created() {
     this.mUserStore.$onAction(
       ({
