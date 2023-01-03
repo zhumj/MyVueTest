@@ -12,6 +12,8 @@
     <el-divider direction="vertical" />
     <router-link to="/main/randomRollCall">爱我就请使劲抽我</router-link>
     <el-divider direction="vertical" />
+    <router-link to="/main/recursiveFormulation">递归算法篇</router-link>
+    <el-divider direction="vertical" />
     <el-button v-on:click="changeStoreLang">{{
       mAppStore.$state.lang
     }}</el-button>

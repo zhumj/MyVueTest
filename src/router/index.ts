@@ -32,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
         name: "randomRollCall",
         component: () => import("@/views/main/RandomRollCall.vue"),
       },
+      {
+        path: "recursiveFormulation",
+        name: "RecursiveFormulation",
+        component: () => import("@/views/main/RecursiveFormulationView.vue"),
+      },
     ],
   },
   {
